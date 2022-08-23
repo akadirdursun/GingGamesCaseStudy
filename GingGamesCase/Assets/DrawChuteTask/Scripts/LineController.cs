@@ -83,10 +83,13 @@ namespace Abdulkadir.Drawing3DWithCube
             StopCoroutine(onDrawCoroutine);
             onDrawCoroutine = null;
 
+            //TODO: Draw 3D w Cubes
+            Vector3[] positions = new Vector3[lineRenderer.positionCount];
+            lineRenderer.GetPositions(positions);
+            StaticEvents.onDrawingEnded?.Invoke(positions);
+
             lineRenderer.gameObject.SetActive(false);
             lineRenderer.positionCount = 0;
-
-            //TODO: Draw 3D w Cubes
         }
     }
 }
