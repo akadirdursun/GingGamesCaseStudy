@@ -522,8 +522,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   uiCamera: {fileID: 423250826}
-  drawLineFrequency: 0.1
-  minLineDistance: 0.2
+  drawLineFrequency: 0.05
+  minLineDistance: 0.1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +581,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 23
+    m_Bits: 279
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
